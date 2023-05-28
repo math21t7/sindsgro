@@ -15,6 +15,11 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, "src/index.html"),
         // about: resolve(__dirname, "src/about.html"),
+        om_sindsgro: resolve(__dirname, "src/om-sindsgro.html"),
+        living_yolates: resolve(__dirname, "src/living-yolates.html"),
+        kontakt: resolve(__dirname, "src/kontakt.html"),
+        booking: resolve(__dirname, "src/booking.html"),
+        sitemap: resolve(__dirname, "src/sitemap.html"),
       },
     },
   },
