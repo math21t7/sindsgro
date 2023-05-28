@@ -2,3 +2,59 @@
 @tailwind components;
 @tailwind utilities;
 
+
+img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  * {
+    margin: 0;
+  }
+
+ul,h2, h3, a, p {
+font-family: articulat-cf, sans-serif;
+font-style: normal;
+          font-weight: 100;
+}
+
+
+h1 {
+    font-family: "monotype-modern-display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.valgt {
+  background-color:#BFB8AA;
+  box-shadow: inset 1px 1px 4px #403B3B;
+}
+
+/*Animation til pil*/ 
+
+
+@media (min-width:640px){
+.pil {
+  animation: OpNed 3s linear infinite;
+  position: absolute;
+  bottom: 0;
+}
+
+
+
+@keyframes OpNed {
+  0%, 100% {
+    bottom: -70px;
+  }
+  50% {
+    bottom: -30px;
+  }
+}}
+
+
+
+
+  
+
+
+
