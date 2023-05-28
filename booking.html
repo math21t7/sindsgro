@@ -152,7 +152,7 @@ function vis(sessioner) {
     //loop igennem json (sessioner)
     if (filter == session.kategori || filter == "alle") {
       const klon = template.cloneNode(true).content;
-      klon.querySelector("img").src = "images/" + session.billede + ".webp";
+      klon.querySelector("img").src = "/img/" + session.billede + ".webp";
         klon.querySelector(".tidspunkt").textContent = session.tidspunkt;
       klon.querySelector("h2").textContent = session.navn;
       klon.querySelector(".beskriv").textContent = session.beskrivelse;
