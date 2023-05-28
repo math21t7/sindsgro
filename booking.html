@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="https://use.typekit.net/alv8mva.css">
     
     <title>Hold og priser</title>
-    <script type="module" crossorigin src="./assets/main-06c7bbcb.js"></script>
-    <link rel="stylesheet" href="./assets/main-ab66e67f.css">
+    <script type="module" crossorigin src="./assets/main-ad8c7ee9.js"></script>
+    <link rel="stylesheet" href="./assets/main-384d48e4.css">
   </head>
   <body class="bg-white overflow-x-hidden">
     <!--------Skip to content--------------->
@@ -50,8 +50,6 @@
     </div>
     </nav>
   </header>
-  <img src="./assets/6470bdd2a1ce302000032c06-b0e8f76c.webp" alt="" class="hidden"><img src="./assets/6470bee7a1ce302000032c12-38a41494.webp" alt="" class="hidden"><img src="./assets/6470c42aa1ce302000032c2a-4e5a1000.webp" alt="" class="hidden"><img src="./assets/6470c461a1ce302000032c2f-a7862642.webp" alt="" class="hidden"> <img src="./assets/6470d92fa1ce30200003323e-f1175d08.webp" alt="" class="hidden">
-<main id="main">
         <section class="grid  md:bg-[url('/images/blad1.png')] bg-no-repeat bg-right-top">
         <h1 class="md:text-mdtextxl text-mdtextl text-center text-black">Hold og priser</h1>
             <p class="text-black md:w-1/2 mx-4 md:text-mdtextsm text-mdtextxsm mt-8 place-self-center p-8">Her har du mulighed for at se en oversigt over de sessioner og særlige tilbud jeg i øjeblikket tilbyder, samt de tilhørende priser. Booking foregår gennem bookingsystemet Planway. </p>
@@ -69,9 +67,8 @@
         
             <section id="datasessioner" class="flex flex-wrap justify-center gap-10 mb-12"></section>
             <template class="flex">
-              <article class="bg-beige max-w-xs lg:max-w-sm rounded-t-full rounded-br-xl text-black flex flex-col drop-shadow-lg">
-                <img src="" alt="" class="h-72 rounded-t-full" />
-                <p class="tidspunkt bg-lightgreen text-center p-4 md:text-mdtextsm text-mdtextxsm"></p>
+              <article class="bg-beige max-w-xs lg:max-w-sm  rounded-xl text-black flex flex-col drop-shadow-lg skaler">
+                <p class="tidspunkt  rounded-t-xl bg-lightgreen text-center p-4 md:text-mdtextsm text-mdtextxsm"></p>
                 <h2 class="md:text-mdtextmedium text-mdtextm p-4 text-center"></h2>
                 <p class="beskriv p-4 md:text-mdtextsm text-mdtextxsm"></p>
                 <p class="pris font-bold md:text-mdtextm text-mdtextsm p-4 text-center mt-auto"></p>
@@ -153,7 +150,6 @@ function vis(sessioner) {
     //loop igennem json (sessioner)
     if (filter == session.kategori || filter == "alle") {
       const klon = template.cloneNode(true).content;
-      klon.querySelector("img").src = "images/" + session.billede + ".webp";
         klon.querySelector(".tidspunkt").textContent = session.tidspunkt;
       klon.querySelector("h2").textContent = session.navn;
       klon.querySelector(".beskriv").textContent = session.beskrivelse;
@@ -165,13 +161,8 @@ function vis(sessioner) {
 
 
 </script>
-<script setup>
-  import imageUrl from 'images/6470bfe4a1ce302000032c1b.webp' // => or relative path
-  </script>
-  
-  <template>
-    <img :src="imageUrl" alt="img" />
-  </template>
-  
+
+
+
   </body>
 </html>
