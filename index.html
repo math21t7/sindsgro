@@ -95,8 +95,15 @@
     <main id="main">
         <section class="grid p-4 md:p-12 bg-[url('/images/splash-vendt.webp')] place-content-center h-screen bg-cover md:bg-contain bg-no-repeat instantfadein">
          <div class="grid grid-cols-2  md:gap-20 place-content-center place-items-center ">
-         <img src="./assets/splash1-f8b01956.webp" class="w-auto lg:max-w-sm rounded-t-full border-beige border-8 md:place-self-end drop-shadow-lg  " alt="Marie Wium i en Living Yolates session">
-          <div class="p-4">
+        <!--- <img src="images/splash1.webp" class="w-auto lg:max-w-sm rounded-t-full border-beige border-8 md:place-self-end drop-shadow-lg  " alt="Marie Wium i en Living Yolates session">--->
+         <img
+  srcset="./assets/splash1-small-64536ab3.webp 480w, ./assets/splash1-f8b01956.webp 800w"
+  sizes="(max-width: 600px) 480px,
+         800px"
+  src="./assets/splash1-f8b01956.webp"
+  alt="Marie Wium i en Living Yolates session" class="w-auto lg:max-w-sm rounded-t-full border-beige border-8 md:place-self-end drop-shadow-lg  " />
+ 
+         <div class="p-4">
             <div class="bg-beige bg-opacity-80 sm:bg-opacity-0 p-4 rounded-md">
           <h1 class="md:text-mddisplay text-mdtextl text-black">Sindsgro</h1>
           <h2 class="text-black md:text-mdtextmedium text-mdtextm xl:w-1/2">Genfind dig selv med Living Yolates</h2>
