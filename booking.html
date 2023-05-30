@@ -9,8 +9,8 @@
     <meta name="description" content="Her kan du booke dig ind på et af Sindsgros Living Yolates hold!">
     
     <title>Hold og priser</title>
-    <script type="module" crossorigin src="./assets/main-cb7b5067.js"></script>
-    <link rel="stylesheet" href="./assets/main-9baec08d.css">
+    <script type="module" crossorigin src="./assets/main-68e8f6e6.js"></script>
+    <link rel="stylesheet" href="./assets/main-87deaa8e.css">
   </head>
   <body class="bg-white overflow-x-hidden">
     <!--------Skip to content--------------->
@@ -52,7 +52,7 @@
     </nav>
   </header>
   <main id="main">
-        <section class="grid  md:bg-[url('/images/blad1.png')] bg-no-repeat bg-right-top">
+        <section class="grid  md:bg-[url('/images/blad1.svg')] bg-no-repeat bg-left-top">
         <h1 class="md:text-text2xl text-textxl text-center text-black">Hold og priser</h1>
             <p class="text-black md:w-1/2 mx-4 md:text-textsm text-textxsm mt-8 place-self-center p-8">Her har du mulighed for at se en oversigt over de sessioner og særlige tilbud jeg i øjeblikket tilbyder, samt de tilhørende priser. Booking foregår gennem bookingsystemet Planway. </p>
         <h2 id="overskrift" class="text-textm md:text-textmedium mt-8 text-black text-center">Alle</h2>
@@ -126,7 +126,7 @@ function filtrerSessioner() {
   filter = this.dataset.kategori; //sæt variabel "filter" til værdien af data-kategori på den knap der er klikket på
   document.querySelector(".valgt").classList.remove("valgt"); // fjern klassen "valgt" fra den knap der VAR valgt
   this.classList.add("valgt"); // tilføj class og marker den knap der er klikket på
-  vis(sessioner); // kald funktionen visRetter efter det nye filter er sat
+  vis(sessioner); // kald funktionen vis(sessioner) efter det nye filter er sat på
   header.textContent = this.textContent;
 }
 async function hentData() {
