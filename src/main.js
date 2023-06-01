@@ -1,4 +1,8 @@
 import "./style.css";
+
+
+
+
 /* Import af Motion One bibliotek */
 import { animate, stagger, inView, scroll, timeline } from "motion"
 
@@ -28,6 +32,11 @@ function sidenVises() {
   }
 
 //animationer
+const mediaQuery = window.matchMedia('(min-width: 768px)')
+
+if (mediaQuery.matches) {
+
+  animate( ".instantfadein", { opacity: [ 0, 1] }, { duration: 4 })
 
 
 inView( ".fadein1" , () =>{
@@ -51,9 +60,7 @@ animate(
 )
 })
 
-
-animate( ".instantfadein", { opacity: [ 0, 1] }, { duration: 4 })
-
+}
 
 //cookie-boks. Starter fjernCookieboks funktionen ved tryk på en af knapperne
 
@@ -77,7 +84,6 @@ function fjernCookieboks() {
 if (sessionStorage.getItem("fjernCookieboks")) {
   cookieboks.classList.add("hidden");
 }*/
-
 
 
 

@@ -12,7 +12,7 @@ img {
     margin: 0;
   }
 
-ul,h2, h3, a, p {
+ul,h2, h3, a, p, button, label {
 font-family: articulat-cf, sans-serif;
 font-style: normal;
           font-weight: 100;
@@ -24,6 +24,8 @@ h1 {
     font-weight: 400;
     font-style: normal;
 }
+
+
 
 .valgt {
   background-color:#BFB8AA;
@@ -51,7 +53,16 @@ h1 {
   }
 }}
 
+@media (min-width:1200px){
 
+.skaler:hover {
+  transition: transform .7s;
+}
+
+.skaler:hover {
+  transform: scale(1.1);
+}
+}
 
 
   

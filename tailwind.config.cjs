@@ -3,7 +3,7 @@ module.exports = {
   content: ["./src/**/*.{html,vue,js,ts,jsx,tsx}"],
   theme: {
     colors: {
-      darkgreen: "#6C7B66",
+      darkgreen: "#66725F",
       lightgreen:"#A9B8A3",
       white: "#F3F3F3",
       black: "#403B3B",
@@ -11,13 +11,13 @@ module.exports = {
       beige: "#F5E0CD",
     },
     fontSize:{
-      mddisplay: "96px",
-      mdtextxl: "64px",
-      mdtextl:"40px",
-      mdtextmedium:"32px",
-      mdtextm:"24px",
-      mdtextsm:"18px",
-      mdtextxsm:"16px"
+      display: "96px",
+      text2xl: "64px",
+      textxl:"40px",
+      textl:"32px",
+      textm:"24px",
+      textsm:"20px",
+      textxsm:"16px"
     },
     extend: {
       cursor: {
